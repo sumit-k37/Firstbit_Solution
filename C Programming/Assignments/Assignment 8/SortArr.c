@@ -1,0 +1,24 @@
+//Sort the array:
+
+void main()
+{
+	int n=5,temp;
+	int arr[]={1,9,15,13,2};
+	for(int i=0;i<n;i++)
+	{
+		for(int j=i+1;j<n;j++)
+		{
+			if(arr[i]>arr[j])
+			{
+				temp=arr[i];
+				arr[i]=arr[j];			
+				arr[j]=temp;
+			}
+		}
+		
+	}
+	for(int i=0;i<n;i++)
+	{
+		printf("%d ",arr[i]);
+	}
+}
